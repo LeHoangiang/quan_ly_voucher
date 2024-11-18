@@ -1,0 +1,82 @@
+/* RegistrationForm.css */
+
+.container {
+  display: flex;
+  /* margin-top: 50px; */
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  height: 100vh;
+}
+
+.leftBox {
+  flex: 1;
+  /* background-color: rgba(5, 41, 248, 0.7); */
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  background-image: url("./nen.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  /* filter: blur(5px) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4)); */
+}
+.leftBox::before {
+  content: ""; /* Tạo nội dung trống */
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 0; /* Đặt từ trên xuống */
+  left: 0; /* Đặt từ trái sang */
+  right: 0; /* Đặt từ phải sang */
+  bottom: 0; /* Đặt từ dưới lên */
+  background-color: rgba(1, 57, 109, 0.5); /* Màu xanh với độ trong suốt */
+  filter: blur(5px); /* Làm mờ màu xanh */
+  z-index: 1; /* Đặt z-index thấp hơn để không che khuất nội dung bên trong */
+}
+.leftBox img {
+  position: absolute; /* Định vị hình ảnh */
+  top: 20%; /* Vị trí từ trên xuống */
+  left: 10%; /* Vị trí từ trái sang */
+  width: 80%; /* Kích thước hình ảnh */
+  height: auto; /* Tự động điều chỉnh chiều cao */
+  z-index: 1; /* Đảm bảo hình ảnh nằm dưới nội dung khác */
+}
+.leftBoxTitle,
+.leftBoxTitle + * {
+  position: relative; /* Để nội dung nằm trên hình ảnh */
+  z-index: 2; /* Đảm bảo nội dung nằm trên hình ảnh */
+}
+
+.leftBoxTitle {
+  margin-top: 50px;
+  font-weight: bold;
+  /* margin: 0, auto; */
+}
+
+.rightBox {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.termsLink {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.continueButton {
+  width: 100%;
+}
+.form {
+  width: 66.67%;
+  margin: auto;
+}

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: -200px;
+}
+
+.custom-button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid blue; /* Đã sửa border ở đây */
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn1 {
+  color: rgb(246, 239, 239);
+  background-color: #1877f2;
+}
+
+.btn1:hover {
+  background-color: rgb(24, 24, 175);
+}
+
+.btn2 {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue; /* Đã sửa border ở đây */
+}
+
+.btn2:hover {
+  background-color: blue;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 350px;
+  /* background-color: hsla(232, 97%, 48%, 0.8); */
+  padding: 20px;
+  background-color: #8bb8fc;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0; /* Xóa padding để hình ảnh chiếm hết chiều rộng */
+  width: 100%; /* Đã sửa width ở đây */
+}
+
+.main-content img {
+  width: 40%; /* Đảm bảo hình ảnh chiếm chiều rộng 100% */
+  margin-left: 300px;
+  margin-top: -40px; /* Đảm bảo tỷ lệ khung hình không bị biến dạng */
+}
+h3 {
+  font-size: 36px;
+  color: rgb(37, 37, 152);
+  margin-left: 50px;
+}
+.btn3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 20px;
+}

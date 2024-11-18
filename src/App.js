@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import RegistrationForm from "./Components/Register";
+import LoginDialog from "./Components/LoginScreen";
+import HomeScreen from "./Components/HomeScreen";
+import AppRouter from "./Router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppRouter />
     </div>
   );
 }
